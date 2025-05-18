@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crumbl Clon</title>
+  <link rel="stylesheet" href="crumbl2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <input type="checkbox" id="sidebar-toggle" hidden>
+  <label for="sidebar-toggle" class="sidebar-toggle-btn" aria-label="Abrir menú lateral">☰</label>
+
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <h2 class="sidebar-title">Crumbl</h2>
+      <nav class="sidebar-nav">
+        <a href="crumbl2.html" aria-label="Ir a Inicio">Inicio</a>
+        <a href="#menu" aria-label="Ver Menú">Menú</a>
+        <a href="ordenar.html" aria-label="Realizar Orden">Ordenar</a>
+        <a href="#locations" aria-label="Ver Ubicaciones">Ubicaciones</a>
+        <a href="#about" aria-label="Conocer más Sobre Nosotros">Nosotros</a>
+        <a href="#contact" aria-label="Contactarnos">Contacto</a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="video-background">
+    <video id="video-bg" autoplay loop muted>
+        <source src="The Kardashian Jenner Family Flavors - Crumbl.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <main class="main-content">
+    <section id="home" class="hero-section">
+      <video autoplay muted loop class="bg-video">
+        <source src="Cookie Dough - Crumbl Cookies.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay">
+        <h1>Bienvenido a Crumbl</h1>
+        <p>Las galletas más frescas y deliciosas, cada semana un nuevo menú.</p>
+        <a href="#menu" class="btn-primary">Explora el Menú</a>
+      </div>
+    </section>
+    <section id="menu" class="section">
+      <div class="menu-section">
+        <video autoplay loop muted class="video-background">
+          <source src="The Kardashian Jenner Family Flavors - Crumbl.mp4" type="video/mp4">
+        </video>
+        <h2 class="section-title">Menú de la Semana</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="Receta-crumbl-cookies.jpg" alt="Galleta 1">
+            <h3>Chocolate Chip</h3>
+            <p>La clásica galleta con chispas de chocolate.</p>
+          </div>
+          <div class="card">
+            <img src="Cookies-and-cream-cookies-8.jpg" alt="Galleta 2">
+            <h3>Cookies & Cream</h3>
+            <p>Inspirada en la icónica combinación de crema y chocolate.</p>
+          </div>
+          <div class="card">
+            <img src="Lofthouse-Cookies-blog-2.jpg" alt="Galleta 3">
+            <h3>Sugar Cookie</h3>
+            <p>Galleta suave con glaseado rosa pastel.</p>
+          </div>
+          <div class="card">
+            <img src="3534210-super-easy-peanut-butter-cookies-Trusted-Brands-4x3-1-919351fc3ccd480695003de8a3fd3730.jpg" alt="Galleta 4">
+            <h3>Peanut Butter</h3>
+            <p>Una delicia para los amantes de la mantequilla de maní.</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="order" class="section order-section">
+      <div class="order-container">
+        <h2 class="section-title">Ordena tus Favoritas</h2>
+        <p></p>
+        <a href="ordenar.html" class="btn-secondary">Ordenar Ahora</a>
+      </div>
+    </section>
+
+    <section id="locations" class="section">
+      <h2 class="section-title">Encuentra tu Tienda</h2>
+      <div class="locations">
+        <div class="location">
+          <h3>Santo Domingo</h3>
+          <p>Av. Winston Churchill #25</p>
+        </div>
+        <div class="location">
+          <h3>Santiago</h3>
+          <p>Calle del Sol, Plaza Bella</p>
+        </div>
+        <div class="location">
+          <h3>Punta Cana</h3>
+          <p>Boulevard Turístico del Este</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">Sobre Nosotros</h2>
+      <p class="about-text">En Crumbl nos apasiona hornear galletas perfectas. Nuestra misión es brindar momentos dulces con cada mordida, usando solo ingredientes frescos y una pizca de creatividad.</p>
+    </section>
+
+   
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title">Contáctanos</h2>
+      <form class="contact-form" aria-labelledby="contact">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </section>
+    <div class="overlay"></div>
+  
+    <footer class="footer">
+      <p>&copy; Crumbl </p>
+      <div class="social-icons">
+        <div class="social-icons">
+          <a href="#" class="social-icon" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/crumbl/" class="social-icon" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://x.com/Crumbl" class="social-icon" target="_blank">
+            <i class="fab fa-twitter"></i> 
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
